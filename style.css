@@ -1,0 +1,57 @@
+/* Custom Typography & Spacing mimics tech store branding */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+/* Custom Navbar details */
+.navbar-brand {
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Hero section layout using free Unsplash sample stock images */
+.hero-bg-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+}
+
+/* Product Card Interactions */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1) !important;
+}
+
+.product-img {
+    height: 220px;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Ensures crisp backgrounds if raw assets have tints */
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+/* Custom buttons overriding default shapes */
+.btn-dark {
+    background-color: #000;
+    border: none;
+}
+.btn-dark:hover {
+    background-color: #222;
+}
