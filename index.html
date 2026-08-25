@@ -12,22 +12,22 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold tracking-wide" href="#">GALAXY</a>
+            <a class="navbar-brand fw-bold tracking-wide" href="index.html">GALAXY</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-item nav-link active" href="#">Mobile</a></li>
+                    <li class="nav-item"><a class="nav-item nav-link active" href="products.html">Mobile</a></li>
                     <li class="nav-item"><a class="nav-item nav-link" href="#">TV & Audio</a></li>
                     <li class="nav-item"><a class="nav-item nav-link" href="#">Appliances</a></li>
                     <li class="nav-item"><a class="nav-item nav-link" href="#">Computing</a></li>
                 </ul>
                 <div class="d-flex align-items-center text-white">
-                    <button class="btn btn-link text-white position-relative p-2" id="cartBtn">
+                    <a href="cart.html" class="btn btn-link text-white position-relative p-2" id="cartBtn">
                         <i class="bi bi-bag fs-5"></i>
                         <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -55,16 +55,20 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm product-card">
-                    <div class="p-4 text-center bg-light">
-                        <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=300&q=80" class="img-fluid product-img" alt="Galaxy S26">
-                    </div>
-                    <div class="card-body text-center d-flex flex-column justify-content-between">
-                        <div>
-                            <h5 class="card-title fw-bold">Galaxy S26 Ultra</h5>
-                            <p class="card-text text-muted">Titanium Gray | 512GB</p>
-                            <p class="fs-5 fw-bold text-dark">$1,299.99</p>
+                    <a href="product-detail.html" class="text-decoration-none text-dark">
+                        <div class="p-4 text-center bg-light">
+                            <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=300&q=80" class="img-fluid product-img" alt="Galaxy S26">
                         </div>
-                        <button class="btn btn-dark w-100 rounded-pill mt-3 add-to-cart" data-name="Galaxy S26 Ultra" data-price="1299.99">Add to Cart</button>
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="card-title fw-bold">Galaxy S26 Ultra</h5>
+                                <p class="card-text text-muted">Titanium Gray | 512GB</p>
+                                <p class="fs-5 fw-bold text-dark">$1,299.99</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="px-4 pb-4">
+                        <button class="btn btn-dark w-100 rounded-pill add-to-cart" data-name="Galaxy S26 Ultra" data-price="1299.99">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -110,6 +114,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+<!-- Yooo -->

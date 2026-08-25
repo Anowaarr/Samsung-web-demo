@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Bag | Galaxy Store</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Shared Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">GALAXY</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-item nav-link" href="index.html">Mobile</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-outline-light btn-sm rounded-pill px-3">Continue Shopping</a>
+        </div>
+    </nav>
+
+    <!-- Cart Layout Overview -->
+    <main class="container my-5 py-4">
+        <h2 class="fw-bold mb-4">Your Shopping Cart</h2>
+        
+        <div class="row g-4">
+            <!-- Left Side: List dynamic items -->
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm p-4 rounded-4 bg-white">
+                    <div id="cart-items-container">
+                        <!-- Dynamic Cart Entries inject here via JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Order Summary Checkout Box -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm p-4 rounded-4 bg-white">
+                    <h4 class="fw-bold mb-4">Order Summary</h4>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted">Subtotal</span>
+                        <span class="fw-bold" id="summary-subtotal">$0.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted">Estimated Shipping</span>
+                        <span class="text-success fw-bold">FREE</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="text-muted">Estimated Tax (10%)</span>
+                        <span class="fw-bold" id="summary-tax">$0.00</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-4">
+                        <span class="fs-5 fw-bold">Total</span>
+                        <span class="fs-5 fw-bold text-dark" id="summary-total">$0.00</span>
+                    </div>
+                    <button class="btn btn-dark w-100 rounded-pill py-3" onclick="alert('Thank you for your simulated order!')">Proceed to Checkout</button>
+                    <button class="btn btn-link text-danger w-100 mt-2 text-decoration-none btn-sm" id="clearCartBtn">Clear All Items</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap & App logic links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
